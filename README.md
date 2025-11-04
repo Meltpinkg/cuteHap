@@ -12,7 +12,7 @@ Alternatively, installing from source with:
 ```
     git clone https://github.com/Meltpinkg/cuteHap.git
     cd cuteHap
-    python setup.py install
+    CFLAGS="-std=c99" python setup.py install
 ```
 
 ---	
@@ -28,7 +28,7 @@ cuteHap detects germline or mosaic structural variations (SVs) through phased lo
 	3. Biopython
 	4. cigar
 	5. numpy
-	6. pyvcf3
+	6. Cython
 
 ---
 ### Quick Start
