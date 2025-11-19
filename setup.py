@@ -9,7 +9,7 @@ with open('README.md') as f:
 cython_extensions = cythonize("src/cuteHap/*.pyx")
 
 setup(
-    name = "cuteHap",
+    name = "cutehap",
     version = "1.0.0",
     description = "Haplotype-resolved genomic structural variation detection with cuteHap",
     author = "Shuqi Cao",
