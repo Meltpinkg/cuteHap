@@ -24,6 +24,7 @@ setup(
     long_description = readme,
     long_description_content_type = 'text/markdown',
     zip_safe = False,
+    setup_requires = ['Cython'],
     install_requires = ['scipy', 'pysam', 'Biopython', 'Cigar', 'numpy', 'Cython'],
     ext_modules=cython_extensions
 )

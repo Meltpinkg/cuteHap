@@ -6,7 +6,9 @@ A haplotype-resolved SV detector in phased long read sequencing data.
 ### Installation
 We recommand the installation via conda or pip:
 ```
-    The installation via conda and pypi is now in construction.
+    conda install -c bioconda cutehap
+	or
+	pip install cutehap
 ```
 Alternatively, installing from source with:
 ```
