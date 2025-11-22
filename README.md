@@ -6,9 +6,9 @@ A haplotype-resolved SV detector in phased long read sequencing data.
 ### Installation
 We recommand the installation via conda or pip:
 ```
-    conda install -c bioconda cutehap
+    $ conda install -c bioconda cutehap
 	or
-	pip install cutehap
+	$ pip install cutehap
 ```
 Alternatively, installing from source with:
 ```
@@ -19,7 +19,7 @@ Alternatively, installing from source with:
 
 ---	
 ### Introduction
-cuteHap detects germline or mosaic structural variations (SVs) through phased long reads sequencing alignments. 
+Structural variations (SVs), as a major category of genomic rearrangements, are capable of altering millions of nucleotides within the human genome. The detection of germline SVs and somatic mosaicism has emerged as a critical frontier in genomic research. Long-read sequencing technologies have demonstrated transformative potential in characterizing these variants. cuteHap is designed to produce high-quality, phased call sets for germline SV detection while simultaneously identifying low-frequency somatic mosaic events. The method delivers high-performance, haplotype-resolved SV detection and comprehensive detection of low-frequency mosaicism. A detailed usage guide documentation is available at [here].
 
 ---
 ### Dependence
