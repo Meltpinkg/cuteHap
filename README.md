@@ -19,7 +19,7 @@ Alternatively, installing from source with:
 
 ---	
 ### Introduction
-Structural variations (SVs), as a major category of genomic rearrangements, are capable of altering millions of nucleotides within the human genome. The detection of germline SVs and somatic mosaicism has emerged as a critical frontier in genomic research. Long-read sequencing technologies have demonstrated transformative potential in characterizing these variants. cuteHap is designed to produce high-quality, phased call sets for germline SV detection while simultaneously identifying low-frequency somatic mosaic events. The method delivers high-performance, haplotype-resolved SV detection and comprehensive detection of low-frequency mosaicism. A detailed usage guide documentation is available at [here].
+Structural variations (SVs), as a major category of genomic rearrangements, are capable of altering millions of nucleotides within the human genome. The detection of germline SVs and somatic mosaicism has emerged as a critical frontier in genomic research. Long-read sequencing technologies have demonstrated transformative potential in characterizing these variants. cuteHap is designed to produce high-quality, phased call sets for germline SV detection while simultaneously identifying low-frequency somatic mosaic events. The method delivers high-performance, haplotype-resolved SV detection and comprehensive detection of low-frequency mosaicism. A detailed usage guide documentation is available at [here](https://github.com/Meltpinkg/cuteHap/blob/main/src/benchmarks/documentation.md).
 
 ---
 ### Dependence
