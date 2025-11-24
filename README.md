@@ -40,7 +40,12 @@ cuteHap <phased.bam> <reference.fa> <output.vcf> <workdir>
 
 ---
 ### Changelog
-    cuteHap (v1.0.0)
+    cuteHap (v1.0.1)
+    1. update README.md
+	2. add user guide documentation
+	3. remove unused codes
+	
+	cuteHap (v1.0.0)
     1. the initial version of cuteHap
 
 ---
