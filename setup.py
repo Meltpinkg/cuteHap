@@ -10,7 +10,7 @@ cython_extensions = cythonize("src/cuteHap/*.pyx")
 
 setup(
     name = "cutehap",
-    version = "1.0.0",
+    version = "1.0.1",
     description = "Haplotype-resolved genomic structural variation detection with cuteHap",
     author = "Shuqi Cao",
     author_email = "sqcao@stu.hit.edu.cn",

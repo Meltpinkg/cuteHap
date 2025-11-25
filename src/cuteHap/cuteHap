@@ -3,8 +3,8 @@
 ''' 
  * All rights Reserved, Designed By HIT-Bioinformatics   
  * @Title: cuteHap
- * @date: Sep. 4th 2025
- * @version V1.0.0
+ * @date: Nov. 24th 2025
+ * @version V1.0.1
 '''
 
 import pysam
