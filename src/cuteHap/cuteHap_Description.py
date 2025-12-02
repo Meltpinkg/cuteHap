@@ -2,12 +2,12 @@
  * All rights Reserved, Designed By HIT-Bioinformatics   
  * @Title:  cuteHap_Description.py
  * @author: sqcao
- * @date: Nov. 24th 2025
- * @version V1.0.1
+ * @date: Dec. 2nd 2025
+ * @version V1.0.2
 '''
 import argparse
 
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 
 class cuteHap(object):
 	'''
