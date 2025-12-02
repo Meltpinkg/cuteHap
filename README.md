@@ -12,9 +12,9 @@ We recommand the installation via conda or pip:
 ```
 Alternatively, installing from source with:
 ```
-    git clone https://github.com/Meltpinkg/cuteHap.git
-    cd cuteHap
-    python setup.py install
+    $ git clone https://github.com/Meltpinkg/cuteHap.git
+    $ cd cuteHap
+    $ python setup.py install
 ```
 
 ---	
