@@ -14,7 +14,7 @@ Alternatively, installing from source with:
 ```
     git clone https://github.com/Meltpinkg/cuteHap.git
     cd cuteHap
-    CFLAGS="-std=c99" python setup.py install
+    python setup.py install
 ```
 
 ---	
@@ -40,7 +40,11 @@ cuteHap <phased.bam> <reference.fa> <output.vcf> <workdir>
 
 ---
 ### Changelog
-    cuteHap (v1.0.1)
+	cuteHap (v1.0.2)
+    1. modify the setup instructions
+	2. add installation via conda and pypi
+
+	cuteHap (v1.0.1)
     1. update README.md
 	2. add user guide documentation
 	3. remove unused codes
