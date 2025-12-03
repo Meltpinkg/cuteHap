@@ -23,14 +23,14 @@ Structural variations (SVs), as a major category of genomic rearrangements, are 
 
 ---
 ### Dependence
-	
-	1. python3
- 	2. scipy
-	2. pysam
-	3. Biopython
-	4. cigar
-	5. numpy
-	6. Cython
+    
+    1. python3
+    2. scipy
+    2. pysam
+    3. Biopython
+    4. cigar
+    5. numpy
+    6. Cython
 
 ---
 ### Quick Start
@@ -40,16 +40,16 @@ cuteHap <phased.bam> <reference.fa> <output.vcf> <workdir>
 
 ---
 ### Changelog
-	cuteHap (v1.0.2)
+    cuteHap (v1.0.2)
     1. modify the setup instructions
-	2. add installation via conda and pypi
+    2. add installation via conda and pypi
 
-	cuteHap (v1.0.1)
+    cuteHap (v1.0.1)
     1. update README.md
-	2. add user guide documentation
-	3. remove unused codes
-	
-	cuteHap (v1.0.0)
+    2. add user guide documentation
+    3. remove unused codes
+    
+    cuteHap (v1.0.0)
     1. the initial version of cuteHap
 
 ---
