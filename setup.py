@@ -1,8 +1,6 @@
 # coding=utf-8
 
 from setuptools import setup, find_packages, Extension
-from Cython.Build import cythonize
-import pysam
 
 with open('README.md') as f:
     readme = f.read()
