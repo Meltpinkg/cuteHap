@@ -1314,21 +1314,21 @@ def main_ctrl(args, argv):
             result.append(analysis_pools.map_async(run_tra, para))
             # result.append(run_tra(para[0]))
 
-        analysis_pools.close()
-        analysis_pools.join()
+    analysis_pools.close()
+    analysis_pools.join()
 
-        results={}
-        for res in result:
-            try:
-                chr, svs1, svs2 = res.get()[0]
-                # chr, svs1, svs2 = res[0], res[1], res[2]
-                if chr not in results.keys():
-                    results[chr]=[]
-                results[chr].extend(svs1)
-                results[chr].extend(svs2)
-            except:
-                pass
-        file = open(args.output, 'w')
+    results={}
+    for res in result:
+        try:
+            chr, svs1, svs2 = res.get()[0]
+            # chr, svs1, svs2 = res[0], res[1], res[2]
+            if chr not in results.keys():
+                results[chr]=[]
+            results[chr].extend(svs1)
+            results[chr].extend(svs2)
+        except:
+            pass
+    file = open(args.output, 'w')
         
     logging.info("Writing to your output file.")
 

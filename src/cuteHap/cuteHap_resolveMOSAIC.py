@@ -69,7 +69,7 @@ def resolution_INDEL(path, chr, svtype, read_count, threshold_gloab, max_cluster
         hp_count = hp_dist_dict[i]
         overlap_reads = overlap_reads_dict[i]
         if hp_count[0]+abs(hp_count[1]-hp_count[2]) < (hp_count[1]+hp_count[2])/2 or abs(hp_count[1]-hp_count[2]) < hp_count[0] < max(hp_count[1],hp_count[2]):
-        # if 1 == 0:
+        # if 1 == 1:
             a_phased_single_SV = generate_balance(semi_clusters_list[i], 
                                 chr, 
                                 svtype, 
