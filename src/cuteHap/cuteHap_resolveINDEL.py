@@ -1,6 +1,6 @@
 import numpy as np
 from cuteHap.cuteHap_genotype import cal_CIPOS, overlap_cover, assign_gt, bench_phase
-from cuteHap.dp_v12 import solve_dp
+from cuteHap.beam import solve_beam
 import bisect
 import logging
 import pickle
@@ -232,7 +232,10 @@ def generate_bad_ultra(semi_cluster, chr, svtype, read_count,
 
         return np.mean(filtered_data) if filtered_data else np.mean(data)
     # [read_id, pos, indel_len, alt_seq, hp]
-    real_ans = solve_dp(semi_cluster)
+    if svtype == 'DEL':
+        real_ans = solve_beam(semi_cluster, True, 20)
+    else:
+        real_ans = solve_beam(semi_cluster, False, 20)
     if svtype == 'INS':
         read2seq = dict()
         for _ in semi_cluster:
@@ -291,6 +294,10 @@ def generate_bad_ultra(semi_cluster, chr, svtype, read_count,
                     if _[0] not in allele_read2seq:
                         allele_read2seq[_[0]] = ''
                     allele_read2seq[_[0]] += read2seq[_[0]][_[1]]
+                delta_seqlength = -1
+                for _ in allele_read2seq:
+                    if len(allele_read2seq[_]) >= signalLen and (len(allele_read2seq[_]) - signalLen < delta_seqlength or delta_seqlength == -1):
+                        ideal_seq = allele_read2seq[_][0:signalLen]
                 if ideal_seq == '<INS>':
                     sorted_values = sorted(allele_read2seq.values(), key=lambda s: len(s))
                     sorted_lengths = [len(s) for s in sorted_values]

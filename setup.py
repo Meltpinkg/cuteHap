@@ -24,7 +24,7 @@ ext_modules = [
 
 setup(
     name = "cutehap",
-    version = "1.0.2",
+    version = "1.0.3",
     description = "Haplotype-resolved genomic structural variation detection with cuteHap",
     author = "Shuqi Cao",
     author_email = "sqcao@stu.hit.edu.cn",

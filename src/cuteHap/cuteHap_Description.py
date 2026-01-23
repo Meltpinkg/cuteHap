@@ -2,8 +2,8 @@
  * All rights Reserved, Designed By HIT-Bioinformatics   
  * @Title:  cuteHap_Description.py
  * @author: sqcao
- * @date: Dec. 2nd 2025
- * @version V1.0.2
+ * @date: Jan. 23rd 2026
+ * @version V1.0.3
 '''
 import argparse
 
