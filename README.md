@@ -40,6 +40,9 @@ cuteHap <phased.bam> <reference.fa> <output.vcf> <workdir>
 
 ---
 ### Changelog
+    cuteHap (v1.0.3)
+    1. update the searching algorithm
+    
     cuteHap (v1.0.2)
     1. modify the setup instructions
     2. add installation via conda and pypi
