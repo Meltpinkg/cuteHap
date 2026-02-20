@@ -1,6 +1,6 @@
 import numpy as np
 from cuteHap.cuteHap_genotype import cal_CIPOS, overlap_cover, assign_gt_mosaic, bench_phase
-from cuteHap.dp_v12 import solve_dp
+from cuteHap.beam import solve_beam
 import logging
 import pickle
 import time
@@ -165,7 +165,10 @@ def generate_bad_ultra(semi_cluster, chr, svtype, read_count,
     action, remain_reads_ratio, clips, search_bad_list, search_flag_list, max_cluster_bias):
 
     # [read_id, pos, indel_len, alt_seq, hp]
-    real_ans = solve_dp(semi_cluster)
+    if svtype == 'DEL':
+        real_ans = solve_beam(semi_cluster, True, 20)
+    else:
+        real_ans = solve_beam(semi_cluster, False, 20)
     
     for allele in real_ans:
         breakpointStart = allele[0]
